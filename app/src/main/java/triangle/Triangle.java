@@ -54,8 +54,8 @@ public class Triangle {
      */
     public double getArea() {
         if (!isImpossible()) {
-            return Math.sqrt(getPerimeter()
-                    / 2
+            return Math.sqrt(
+                    getPerimeter() / 2
                     * (getPerimeter() / 2 - side1)
                     * (getPerimeter() / 2 - side2)
                     * (getPerimeter() / 2 - side3));

@@ -40,6 +40,9 @@ public class AppTest {
 
         Triangle triangle4 = new Triangle(5, 4, 3);
         assertEquals("right-angled",triangle4.classify(), "5 * 5 == (4*4 + 3*3 = Right Angled triangle");
+
+        Triangle triangle5 = new Triangle(2, 3, 6);
+        assertEquals("scalene",triangle5.classify(), " 2 != 3 != 6 = scalene triangle");
     }
 
     @Test
@@ -68,6 +71,13 @@ public class AppTest {
     void testIsTriangleValidIsossceles() {
         Triangle triangle = new Triangle(5, 5, 7);
         assertTrue(triangle.isIsosceles(), "5 == 5 != 7 = isossceles triangle");
+    }
+
+    @Test
+    @DisplayName("Is Triangle Scalene")
+    void testIsTriangleValidScalene() {
+        Triangle triangle = new Triangle(2, 3, 6);
+        assertTrue(triangle.isScalene(), " 2!= 3!= 6 = scalene triangle");
     }
 
 
