@@ -21,6 +21,7 @@ public class Triangle {
         side3 = s3;
     }
 
+
     /**
      * Sets the lenghts of the sides of this triangle.
      * @param s1 length of the side1
